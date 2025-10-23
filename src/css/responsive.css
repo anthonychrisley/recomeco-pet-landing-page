@@ -1,0 +1,190 @@
+@media (max-width: 768px) {
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background-color: #FFF8F0;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        padding: 15px;
+        z-index: 999;
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+
+    .menu {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 10px;
+        margin: 5px 0;
+        color: #F9A826;
+        font-size: 1rem; 
+    }
+
+    .logo {
+        gap: 3px;
+    }
+
+    .header {
+        padding: 10px 20px;
+    }
+
+    .header .logo h1 {
+        font-size: 2rem;
+    }
+
+    .header .logo img,
+    .img-sobre {
+        width: 40px;
+    }
+
+    /* hero */
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero-content h2,
+    .titulo-sobre {
+        font-size: 1.75rem; 
+    }
+
+    .hero-content p {
+        font-size: 1.125rem; 
+    }
+
+    .hero-content {
+        padding: 0 10px 60px 10px;
+    }
+
+    .hero {
+        background-position: center top;
+    }
+
+    /* sobre */
+    .sobre {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .story,
+    .sobre-nos {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .sobre .story .logo-sobre h2 {
+        font-size: 2rem; 
+    }
+
+    .sobre .story .logo-sobre p {
+        font-size: 0.75rem; 
+    }
+
+    .titulo-sobre {
+        text-align: center;
+    }
+
+    /* cães para adoção - mobile */
+.nossos-caes{
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 20px 15px 40px 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nossos-caes .card{
+    min-height: auto;
+    width: 100%;
+    padding: 15px;
+}
+
+.nossos-caes .card h3{
+    font-size: 1.1rem;
+}
+
+.nossos-caes .card p{
+    font-size: 0.9rem;
+}
+
+.foto-cao{
+    height: 250px;
+
+}
+
+/* como ajudar - mobile */
+.como-ajudar {
+    padding: 40px 15px;
+}
+
+.como-ajudar h2{
+    font-size: 1.6rem;
+}
+
+.como-ajudar .intro{
+    font-size: 0.95rem;
+}
+
+.ajuda-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.ajuda-card h3{
+    font-size: 1.1rem;
+}
+
+.ajuda-card p{
+    font-size: 0.9rem;
+}
+
+/* fale conosco - mobile */
+.fale-conosco{
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 15px;
+}
+
+.fale-conosco .info-contato,
+.form-contato{
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+.fale-conosco .info-contato h2{
+    font-size: 1.6rem;
+}
+
+.fale-conosco .info-contato p,
+.texto-icones{
+    font-size: 0.9rem;
+}
+
+.campo-forms{
+    font-size: 0.95rem;
+}
+
+.btn-fale-conosco{
+    font-size: 0.95rem;
+    padding: 10px 25px;
+}
+
+/* rodape - mobile */
+.rodape{
+    font-size: 0.85rem;
+    padding: 15px 10px;
+}}

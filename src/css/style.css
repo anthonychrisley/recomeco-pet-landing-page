@@ -1,0 +1,436 @@
+html{
+    background-color: #FFF8F0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    margin-left: 10px;
+}
+
+.header .logo h1{
+    color: #F9A826;
+    font-size: 3rem;
+    font-family: 'poppins';
+    transition: color 0.3s ease
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+
+.header .logo img, .img-sobre{
+    width:50px;
+}
+.menu{
+    display:flex;
+    padding: 15px;
+}
+
+.menu li a{
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #F9A826;
+    font-family: 'poppins', sans-serif;
+    margin-right: 5px;
+    border-radius: 30px;
+    font-weight:600;
+    transition: 0.3s ease-in-out;
+
+}
+
+.logo:hover h1 {
+  color: #6EC1E4;
+}
+
+.menu li a:hover{
+    background-color: #F9A826;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-hamburger{
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #F9A826;
+  cursor: pointer;
+}
+
+.hero{
+    height:90vh;
+    background-image: url("../images/capa-grupo-de-filhotes-adoraveis.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h2, .sobre .story h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'poppins', sans-serif;
+  color: #F9A826;
+
+}
+
+.hero-content p {
+  font-size:  1.375rem;
+  color: #fff; 
+  margin-top: 15px;
+  font-family: 'poppins';
+}
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content{
+    position:relative;
+    z-index: 1;
+    padding-bottom: 100px;
+} 
+
+
+
+.sobre{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 70vh;
+}
+.story{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sobre-nos{
+    width: 50%;
+}
+
+.logo-sobre{
+    line-height: 1.2;
+}
+
+.story .logo-sobre p{
+    font-family: 'roboto';
+    font-size: 0.8125rem;
+    color: #333333;
+    font-weight: 400;
+}
+
+.titulo-sobre{
+    font-family: 'poppins';
+    color: #F9A826;
+    font-size: 2rem;
+}
+
+
+.sobre-nos p{
+    font-family: 'roboto';
+    color:#333333;
+    font-size: 1rem;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+
+.nossos-caes{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    background-color:#F9A826 ;
+    gap: 10px;
+    min-height: 70vh;
+}
+.nossos-caes .card{
+    display: flex; 
+    flex-direction: column;
+    background-color:#FFF8F0;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius:8px;
+    min-height:523px;
+    justify-content:space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.nossos-caes .card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.conteudo{
+    flex-grow: 1;
+}
+
+
+.nossos-caes .card h3{
+    font-family:"Poppins", sans-serif;
+    font-size: 1.2rem;
+    color:#333333;
+
+}
+
+.nossos-caes .card p{
+    font-family: 'roboto';
+    color:#333333;
+    margin-top: 5px;
+    font-size: 0.95rem;
+}
+
+.adopt-button{
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 30px;
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 0.9375rem;
+    color:#FFFFFF;
+    background-color:#F9A826;
+    border:none;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.adopt-button:hover{
+    background-color:#6EC1E4;
+    color:#FFFFFF;
+    cursor: pointer;
+}
+
+.foto-cao{
+    height:300px;
+    width:100%;
+    border-radius:8px;
+}
+
+.foto-cao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.como-ajudar {
+  background-color: #FFF8F0; /* Bege claro */
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.como-ajudar h2 {
+  color: #F9A826; /* Laranja principal */
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.como-ajudar .intro {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ajuda-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.ajuda-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ajuda-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.ajuda-card .icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.ajuda-card h3 {
+  color: #F9A826;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.ajuda-card p {
+  color: #555;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.btn-ajudar {
+  background-color: #F9A826;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ajudar:hover {
+  background-color: #6EC1E4; /* Azul claro */
+}
+
+
+.fale-conosco{
+    display: flex;
+    background-color:#FFFFFF;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-top: 1px solid #F9A826;
+
+}
+
+ .fale-conosco .info-contato h2{
+    font-size: 2rem;
+    color: #F9A826;
+    font-family: "Poppins", sans-serif;
+}
+
+.fale-conosco .info-contato .texto-fale-conosco p{
+    font-size: 1rem;
+    color: #555;
+    font-family: 'roboto', sans-serif;
+    margin-top: 30px;
+    max-width: 400px;
+}
+
+.contato{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+
+}
+
+.contato .contato-email p{
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: "roboto", sans-serif;
+}
+
+.redes-sociais p{
+     margin-bottom: 15px;
+    font-weight: 500;
+    font-family: "roboto", sans-serif;
+}
+
+.campo-forms{
+    padding: 12px 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    color:#333;
+    resize: none;
+}
+
+.btn-fale-conosco{
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  border:none;
+  font-size: 1rem;
+  background-color: #F9A826;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.btn-fale-conosco:hover{
+    color: #FFFFFF;
+    background-color:#6EC1E4;
+    cursor: pointer;
+}
+
+
+.texto-icones{
+    color:#333;
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin: 5px 0;
+}
+
+.fale-conosco .info-contato,
+.form-contato {
+    background-color: #FFF8F0; 
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.campo-forms:focus{
+    border-color: #F9A826;
+    box-shadow: 0 0 5px rgba(249,168,38,0.4);
+    outline: none;
+}
+
+.texto-icones i {
+    color: #F9A826;
+}
+ .texto-icones:hover{
+    cursor: pointer;
+    color: #6EC1E4;
+    transition: color 0.3s ease-in-out;
+ }
+
+
+ .rodape{
+    background-color: #333333;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+    font-size: 0.9rem;
+    color: #fff;
+    padding:20px 0;
+ }
