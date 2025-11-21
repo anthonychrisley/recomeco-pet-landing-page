@@ -1,5 +1,6 @@
 html{
     background-color: #FFF8F0;
+    scroll-behavior: smooth;
 }
 
 .logo{
@@ -218,7 +219,6 @@ html{
 .foto-cao{
     height:300px;
     width:100%;
-    border-radius:8px;
 }
 
 .foto-cao img {
@@ -228,13 +228,13 @@ html{
 }
 
 .como-ajudar {
-  background-color: #FFF8F0; /* Bege claro */
+  background-color: #FFF8F0; 
   text-align: center;
   padding: 80px 20px;
 }
 
 .como-ajudar h2 {
-  color: #F9A826; /* Laranja principal */
+  color: #F9A826;
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   margin-bottom: 15px;
@@ -272,7 +272,6 @@ html{
 
 .ajuda-card .icon {
   font-size: 2.5rem;
-  display: block;
   margin-bottom: 15px;
 }
 
@@ -302,7 +301,7 @@ html{
 }
 
 .btn-ajudar:hover {
-  background-color: #6EC1E4; /* Azul claro */
+  background-color: #6EC1E4; 
 }
 
 
@@ -345,13 +344,6 @@ html{
     margin-left: 50px;
 }
 
-.redes-sociais{
-    display: flex;
-    flex-direction: column;
-    font-weight: 500;
-
-}
-
 .contato .contato-email p{
     margin-bottom: 15px;
     font-weight: 500;
@@ -359,7 +351,7 @@ html{
 }
 
 .redes-sociais p{
-     margin-bottom: 15px;
+    margin-bottom: 15px;
     font-weight: 500;
     font-family: "roboto", sans-serif;
 }
@@ -400,6 +392,7 @@ html{
     font-weight: 400;
     font-size: 0.95rem;
     margin: 5px 0;
+    transition: color 0.3s ease-in-out;
 }
 
 .fale-conosco .info-contato,
@@ -422,9 +415,7 @@ html{
  .texto-icones:hover{
     cursor: pointer;
     color: #6EC1E4;
-    transition: color 0.3s ease-in-out;
  }
-
 
  .rodape{
     background-color: #333333;
